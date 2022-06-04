@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-gold: #F9D205;
+
+    --color-enable: #20bf6b;
+    --color-disable: #eb3b5a;
+
+    --card-border-radius-box: 1rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding-box: 1.5rem;
+    --padding-1: 1.2rem;
+    --width-box: 15rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light); 
+}
+
+.img-post img {
+    border-radius: var(--border-radius-1);
+}
+
+.container {    
+    grid-template-columns: 14rem auto !important;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    margin-top: 0;
+}
+
+.bunch-of-posts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.bunch-of-posts .backlog .list,
+.bunch-of-posts .progress .list,
+.bunch-of-posts .review .list,
+.bunch-of-posts .approved .list,
+.bunch-of-posts .cancel .list {
+    background: var(--color-white);
+    padding: var(--card-padding-box);
+    width: var(--width-box);
+    border-radius: var(--card-border-radius-box);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.bunch-of-posts .backlog .list .head-list h3,
+.bunch-of-posts .progress .list .head-list h3,
+.bunch-of-posts .review .list .head-list h3,
+.bunch-of-posts .approved .list .head-list h3,
+.bunch-of-posts .cancel .list .head-list h3 {
+    font-size: 1rem;
+}
+
+.bunch-of-posts .backlog .list .head-list,
+.bunch-of-posts .progress .list .head-list,
+.bunch-of-posts .review .list .head-list,
+.bunch-of-posts .approved .list .head-list,
+.bunch-of-posts .cancel .list .head-list {
+    line-height: 2;
+}
+
+.bunch-of-posts .backlog .list:hover,
+.bunch-of-posts .progress .list:hover,
+.bunch-of-posts .review .list:hover,
+.bunch-of-posts .approved .list:hover,
+.bunch-of-posts .cancel .list:hover {
+    box-shadow: none;
+}
+
+.bunch-of-posts .backlog .list .profile-status,
+.bunch-of-posts .progress .list .profile-status,
+.bunch-of-posts .review .list .profile-status,
+.bunch-of-posts .approved .list .profile-status,
+.bunch-of-posts .cancel .list .profile-status {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: space-between;
+}
+
+.bunch-of-posts .backlog .list .profile-status .status {
+    font-style: 'Nunito';
+    text-align: center;
+    border-radius: var(--border-radius-2);
+    width: 6rem;
+    height: 1.4rem;
+    background-color: rgba(168, 148, 158, 0.38);
+    color: var(--color-dark);
+    font-weight: 600;
+    padding: 2px;
+    display: block;
+}
+
+.bunch-of-posts .progress .list .profile-status .status {    
+    font-style: 'Nunito';
+    text-align: center;
+    border-radius: var(--border-radius-2);
+    width: 6rem;
+    height: 1.4rem;
+    background-color: rgba(168, 148, 158, 0.28);
+    color: #7F6C80;
+    font-weight: 600;
+    padding: 2px;
+    display: block;
+}
+
+.bunch-of-posts .review .list .profile-status .status {
+    font-style: 'Nunito';
+    text-align: center;
+    border-radius: var(--border-radius-2);
+    width: 6rem;
+    height: 1.4rem;
+    background-color: #f7cb7269;
+    color: #f0932b;
+    font-weight: 600;
+    padding: 2px;
+    display: block;
+}
+
+.bunch-of-posts .approved .list .profile-status .status {
+    font-style: 'Nunito';
+    text-align: center;
+    border-radius: var(--border-radius-2);
+    width: 6rem;
+    height: 1.4rem;
+    background-color: #7bed9f66;
+    color: var(--color-enable);
+    font-weight: 600;
+    padding: 2px;
+    display: block;
+}
+
+.bunch-of-posts .cancel .list .profile-status .status {
+    font-style: 'Nunito';
+    text-align: center;
+    border-radius: var(--border-radius-2);
+    width: 6rem;
+    height: 1.4rem;
+    background-color: #ff47574d;
+    color: #FA2E05;
+    font-weight: 600;
+    padding: 2px;
+    display: block;
+}
+
+
+.bunch-of-posts .backlog .list .profile-status img,
+.bunch-of-posts .progress .list .profile-status img,
+.bunch-of-posts .review .list .profile-status img,
+.bunch-of-posts .approved .list .profile-status img,
+.bunch-of-posts .cancel .list .profile-status img {
+    width: 20px;
+}
+
+.bunch-of-posts .backlog .head,
+.bunch-of-posts .progress .head,
+.bunch-of-posts .review .head,
+.bunch-of-posts .approved .head,
+.bunch-of-posts .cancel .head {
+    text-align: center;
+}
+
+/* List Page */
+.list-page {
+    margin-top: 10px;
+}
+.list-page ul{
+    display: flex;
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.list-page ul li {
+    margin-left: 5px;
+    background-color: black;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.list-page ul li span{
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}

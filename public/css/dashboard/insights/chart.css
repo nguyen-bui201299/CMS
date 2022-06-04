@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-gold: #F9D205;
+
+    --color-enable: #20bf6b;
+    --color-disable: #eb3b5a;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light); 
+}
+
+
+.toltal-chart {
+    margin-top: 2rem;
+}
+
+.toltal-chart h2 {
+    margin-bottom: 0.8rem;
+}
+
+.toltal-chart .chart {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.toltal-chart .chart:hover {
+    box-shadow: none;
+}
+
+.chart-months .toltal-access-users {
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: 28rem 28rem;
+    margin-top: 1rem;
+}
+
+.chart-months .toltal-posts {
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: 28rem 28rem;
+    margin-top: 1rem;
+}
+
+.chart-months .toltal-access-users .chart-access,
+.chart-months .toltal-access-users .chart-users {
+    height: 21rem;
+}
+
+.chart-months .chart-access,
+.chart-months .chart-users {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.chart-months .toltal-posts .chart-posts-bot,
+.chart-months .toltal-posts .chart-posts-users {
+    height: 21rem;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.chart-months .toltal-posts .chart-posts-bot:hover,
+.chart-months .toltal-posts .chart-posts-users:hover {
+    box-shadow: none;
+
+}
+
+
+.chart-months .chart-access:hover,
+.chart-months .chart-posts:hover,
+.chart-months .chart-users:hover {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+    .chart-months .toltal-access-users {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .chart-months .toltal-access-users .chart-access {
+        margin-bottom: 10px;
+    }
+    .chart-months .toltal-posts {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .chart-months .toltal-posts .chart-posts-bot {
+        margin-bottom: 10px;
+    }
+}

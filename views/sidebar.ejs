@@ -1,0 +1,65 @@
+
+
+    <aside>
+        <div class="top">
+            <div class="logo">
+                <a href="/"><img src="/images/avatar.jpg" alt="logo" width="100"></a>
+                <h2 class="text-muted">D<span>A</span>K</h2>
+            </div>
+            <div class="close" id="close-btn"> 
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+        </div>
+        
+        <div class="sidebar"> 
+            <% for ( let i in menu ) { %>
+                <% if ( menu[i].url == url ) { %>
+                    <a class="active" href="<%= menu[i].url %>" >
+                        <span class="<%= menu[i].icon %>" ><%= menu[i].nameIcon %></span>
+                        <h3><%= menu[i].name %></h3>
+                    </a>
+                <% } else { %>
+                    <a class="" href="<%= menu[i].url %>" ><%= menu[i].name %></a>
+                <% } %>
+            <% } %>
+            <!-- <a href="/" class="active">
+                <span class="material-symbols-outlined">
+                    space_dashboard
+                </span>
+                <h3>Dashboard</h3>
+            </a> -->
+
+            <!-- <a href="/user">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                <h3>User</h3>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    list_alt
+                </span>
+                <h3>Post</h3>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    report
+                </span>
+                <h3>Report</h3>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    nest_remote
+                </span>
+                <h3>Control</h3>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+                <h3>Logout</h3>
+            </a> -->
+        </div>
+    </aside>

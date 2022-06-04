@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/dashboard/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="/css/dashboard/insights/insights.css" rel="stylesheet" type="text/css">
+    <link href="/css/backup/backup.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <title>Dashboard  - Backup</title>
+</head>
+<div class="container">
+    <%- include ('sidebar.ejs') %>
+    <main>
+        <div class="header">
+            <h2>Backup</h2>
+            <%- include ('top-right/top.ejs') %>
+        </div>
+
+        <div class="middle">
+            <nav>
+                <a href="#" rel="tab_files" class="active">Files</a>
+                <a href="#" rel="tab_database">Database</a>
+            </nav>
+            <div class="detail">
+                <%- include ('backup/files-backup.ejs') %>
+                <%- include ('backup/database-backup.ejs') %>
+            </div>
+        </div>
+        <form action="POST">
+            <div class="bunch_of_button">
+                <div class="save_cancel">
+                    <button>Save</button>
+                    <small>or</small>
+                    <a href="#">Cancel</a>
+                </div>
+            </div>
+            <div class="reset">
+                <button>Reset to default</button>
+            </div>
+        </form>
+    </main>
+    <script src="/js/dashboard/dashboard.js" type="text/javascript"></script>
+    <script src="/js/dashboard/backup/backup.js" type="text/javascript"></script>
+</div>

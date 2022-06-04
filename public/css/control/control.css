@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-gold: #F9D205;
+
+    --color-enable: #20bf6b;
+    --color-disable: #eb3b5a;
+
+    --card-border-radius-box: 1rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding-box: 1.5rem;
+    --padding-1: 1.2rem;
+    --width-box: 15rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light); 
+}
+.container{
+    grid-template-columns: 14rem auto !important;
+    /* display: flex; */
+}
+.box-control {
+    margin-top: 10px;
+}
+.box-control table{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}
+.box-control table th {
+    border: 1px solid #ccc;
+    background-color: rgb(230, 186, 106);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.box-control table td{
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 2px;
+}
+.box-control table tr{
+    height: 50px;
+    
+}
+.box-control table tr td {
+    width: 12.5%;
+}
+.box-control table tr td p{
+   word-break: break-all;
+}
+/* Conten control */
+.content-add-control{
+    width: 80vw;
+}
+.header-control {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.title-header-control {
+    margin: 10px 5px 5px 5px;
+    width: 75%;
+}
+.title-header-control div {
+    color: black;
+    font-size: 15px;
+}
+.title-header-control div p {
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+.controller-header-control {
+
+   
+}
+.box-controller-header-control {
+
+}
+/* Content-control */
+.content-control {
+    border-top: 1px solid #ccc;
+    width: 80vw;
+}
+.controller-content-control button {
+    height: 30px;
+    border-radius: 5px;
+    background-color: black;
+    width: auto;
+    padding: 7px;
+}
+.controller-content-control .addControl {
+    color: rgb(18, 209, 18);
+    font-size: 15px;
+}
+.controller-content-control .deleteControl {
+    color: rgb(214, 52, 52);
+    font-size: 15px;
+}
+/* List Page */
+.list-page {
+    margin-top: 10px;
+}
+.list-page ul{
+    display: flex;
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.list-page ul li {
+    margin-left: 5px;
+    background-color: black;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.list-page ul li span{
+    font-size: 12px;
+}
+
+/* Modal Edit Bot */
+.box-edit-bot{
+    width: 96vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    animation-name: example;
+    animation-duration: 2s;
+    
+}
+@keyframes example {
+    from {transform: translate(700px);}
+    to {transform: translate(0);}
+  }
+#close-edit-role{
+    animation-name: closebox;
+    animation-duration: 3s;
+}
+
+@keyframes closebox{
+    from {transform: translate(0);}
+    to {transform: translate(700px);}
+}
+
+.box-content{
+    width: 35vw;
+    height: 100vh;
+    background-color: #E8E736;
+    padding: 50px 10px 10px 20px;
+    float: right;
+    margin-right: 15px;
+    /* border: 5 solid black; */
+    border-radius: 5px;
+    border-left: 5px solid black;
+}
+
+.box-header{
+    height: 75px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-header label {
+    font-weight: bold;
+    font-size: 22px;
+}
+.number-post-bot{
+    margin-bottom: 15px;
+}
+.number-post-bot label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.number-post-bot input{
+    margin-top: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-info-light);
+    padding: 10px 10px;
+    border-radius: var(--border-radius-1);
+}
+.time-post-bot{
+    margin-bottom: 15px;
+}
+.time-post-bot label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.time-post-bot input{
+    margin-top: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-info-light);
+    padding: 10px 10px;
+    border-radius: var(--border-radius-1);
+}
+
+.box-bottom{
+    height: 50px;
+    margin-top: 25px;
+}
+.box-bottom input {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.box-bottom .btn-cancel {
+    background-color: black;
+    color: white;
+}
+.box-bottom .btn-save{
+    background-color: rgb(208, 149, 39);
+    color: #ccc;
+}
+/* Modal Add Bot */
+.box-add-bot{
+    width: 96vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    animation-name: example;
+    animation-duration: 2s;
+    
+}
+@keyframes example {
+    from {transform: translate(700px);}
+    to {transform: translate(0);}
+  }
+#close-edit-role{
+    animation-name: closebox;
+    animation-duration: 3s;
+}
+
+@keyframes closebox{
+    from {transform: translate(0);}
+    to {transform: translate(700px);}
+}
+
+.box-content{
+    width: 30vw;
+    height: 100vh;
+    background-color: #E8E736;
+    padding: 50px 10px 10px 20px;
+    float: right;
+    margin-right: 15px;
+    /* border: 5 solid black; */
+    border-radius: 5px;
+    border-left: 5px solid black;
+}
+
+.box-header{
+    height: 75px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-header label {
+    font-weight: bold;
+    font-size: 22px;
+}
+.number-post-bot{
+    margin-bottom: 15px;
+}
+.number-post-bot label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.number-post-bot input{
+    margin-top: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-info-light);
+    padding: 10px 10px;
+    border-radius: var(--border-radius-1);
+}
+.time-post-bot{
+    margin-bottom: 15px;
+}
+.time-post-bot label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.time-post-bot input{
+    margin-top: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-info-light);
+    padding: 10px 10px;
+    border-radius: var(--border-radius-1);
+}
+.box-type-controller{
+    width: 30%;
+}.box-type-controller label {
+    font-size: 16px;
+    font-weight: bold;
+}
+.box-type-controller div{
+    position: relative;
+    right: 0px;
+    padding: 0;
+    /* display: flex; */
+    margin-top: 5px;
+    width: 100%;
+}
+.box-type-controller div select{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-1);
+    color: var(--color-gold);
+}
+.box-type-controller div span{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: var(--color-gold);
+}
+
+.box-type-controller div .btn-add-user{
+    margin-left: 10px;
+}
+.box-type-controller div .btn-add-user input{
+    width: 45px;
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-enable);
+}
+
+.box-bottom{
+    height: 50px;
+    margin-top: 25px;
+}
+.box-bottom input {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.box-bottom .btn-cancel {
+    background-color: black;
+    color: white;
+}
+.box-bottom .btn-save{
+    background-color: rgb(208, 149, 39);
+    color: #ccc;
+}
+/* Modal save add */
+.modal-save-bot-add .modal {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0, 0, 0, 0.4);
+}
+
+.modal-save-bot-add .modal .centered {
+    padding:5px;
+    background: var(--color-background);
+    border-radius:  var(--border-radius-1);
+    display:inline-block;
+    vertical-align:middle;
+    width: 28rem;
+    max-width:400px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -185px;
+}
+
+.modal-save-bot-add .modal .centered .content {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-save-bot-add .modal .centered form div,
+.modal-save-bot-add .modal .centered form div,
+.modal-save-bot-add .modal .centered form div,
+.modal-save-bot-add .modal .centered form div {
+    padding: 12px;
+}
+
+.modal-save-bot-add .modal .centered form div .username,
+.modal-save-bot-add .modal .centered form div .name,
+.modal-save-bot-add .modal .centered form div .email,
+.modal-save-bot-add .modal .centered form div .password,
+.modal-save-bot-add .modal .centered form div .role {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.3;
+}
+
+.modal-save-bot-add .modal .centered form div .role div {
+    position: relative;
+    right: 0px;
+    padding: 0;
+}
+
+.modal-save-bot-add .modal .centered form div .role select {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--color-info-light);
+    border-radius: var(--border-radius-1);
+}
+
+.modal-save-bot-add .modal .centered form div .role span {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: black;
+}
+.submit-cancel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-cancel .submit-i {
+    background-color: var(--color-success);
+}
+
+.submit-cancel .cancel-i {
+    background-color: var(--color-info-light);
+}
+
+.submit-cancel .submit-i,
+.submit-cancel .cancel-i {
+    width: 6rem;
+    height: 32px;
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+}
+
+.modal-save-bot-add .modal .centered form div .username label,
+.modal-save-bot-add .modal .centered form div .name label,
+.modal-save-bot-add .modal .centered form div .email label,
+.modal-save-bot-add .modal .centered form div .password label,
+.modal-save-bot-add .modal .centered form div .role label {
+    font-size: 15px;
+}
+
+.modal-save-bot-add .modal .centered form div .username input,
+.modal-save-bot-add .modal .centered form div .name input,
+.modal-save-bot-add .modal .centered form div .email input,
+.modal-save-bot-add .modal .centered form div .password input {
+    width: 13rem;
+    padding: 10px;
+    background-color: var(--color-info-light);
+
+    border-radius: var(--border-radius-1);
+}
+
+.modal-save-bot-add .modal .centered::before {
+    content:"";
+    display:inline-block;
+    width:0;
+    height:100%;
+    vertical-align:middle;
+}
+/* Modal Save Edit */
+
+.modal-save-bot-edit .modal {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0, 0, 0, 0.4);
+}
+
+.modal-save-bot-edit .modal .centered {
+    padding:5px;
+    background: var(--color-background);
+    border-radius:  var(--border-radius-1);
+    display:inline-block;
+    vertical-align:middle;
+    width: 28rem;
+    max-width:400px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -185px;
+}
+
+.modal-save-bot-edit .modal .centered .content {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-save-bot-edit .modal .centered form div,
+.modal-save-bot-edit .modal .centered form div,
+.modal-save-bot-edit .modal .centered form div,
+.modal-save-bot-edit .modal .centered form div {
+    padding: 12px;
+}
+
+.modal-save-bot-edit .modal .centered form div .username,
+.modal-save-bot-edit .modal .centered form div .name,
+.modal-save-bot-edit .modal .centered form div .email,
+.modal-save-bot-edit .modal .centered form div .password,
+.modal-save-bot-edit .modal .centered form div .role {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.3;
+}
+
+.modal-save-bot-edit .modal .centered form div .role div {
+    position: relative;
+    right: 0px;
+    padding: 0;
+}
+
+.modal-save-bot-edit .modal .centered form div .role select {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--color-info-light);
+    border-radius: var(--border-radius-1);
+}
+
+.modal-save-bot-edit .modal .centered form div .role span {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: black;
+}
+.submit-cancel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-cancel .submit-i {
+    background-color: var(--color-success);
+}
+
+.submit-cancel .cancel-i {
+    background-color: var(--color-info-light);
+}
+
+.submit-cancel .submit-i,
+.submit-cancel .cancel-i {
+    width: 6rem;
+    height: 32px;
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+}
+
+.modal-save-bot-edit .modal .centered form div .username label,
+.modal-save-bot-edit .modal .centered form div .name label,
+.modal-save-bot-edit .modal .centered form div .email label,
+.modal-save-bot-edit .modal .centered form div .password label,
+.modal-save-bot-edit .modal .centered form div .role label {
+    font-size: 15px;
+}
+
+.modal-save-bot-edit .modal .centered form div .username input,
+.modal-save-bot-edit .modal .centered form div .name input,
+.modal-save-bot-edit .modal .centered form div .email input,
+.modal-save-bot-edit .modal .centered form div .password input {
+    width: 13rem;
+    padding: 10px;
+    background-color: var(--color-info-light);
+
+    border-radius: var(--border-radius-1);
+}
+
+.modal-save-bot-edit .modal .centered::before {
+    content:"";
+    display:inline-block;
+    width:0;
+    height:100%;
+    vertical-align:middle;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}

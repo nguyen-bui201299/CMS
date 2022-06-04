@@ -1,0 +1,52 @@
+<div id="tab_files" class="tabbody detail_files">
+    <div class="included">
+        <div class="content">
+            <h3>Include</h3>
+            <p>The list of directories and files 
+            that will be included in the backup.</p>
+        </div>
+        <div class="input-backup">
+            <div class="flex">
+                <label>Path</label>
+                <div class="up-close">
+                    <span class="material-symbols-outlined">
+                        expand_less
+                    </span>
+                    <span class="remove material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+            </div>
+            <input onkeyup="keyUp()" type="text" name="path">
+        </div>
+        <div class="add-new-path">
+            ADD NEW ITEM
+        </div>
+    </div>
+    <div class="excluded">
+        <div class="content">
+        <h3>Exclude</h3>
+        <p>these directories and files will be excluded from the backup. 
+        Directories used by the backup process will automatically be excluded. 
+        You need to specify the exacly path from the project root e.g. 
+        to exclude all plugin from the rainlab author "plugins/rainlab"</p>
+        </div>
+        <div class="input-backup-2">
+            <div class="flex">
+                <label>Path</label>
+                <div class="up-close">
+                    <span class="material-symbols-outlined">
+                        expand_less
+                    </span>
+                    <span class="remove material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+            </div>
+            <input type="text" name="path">
+        </div>
+        <div class="add-new-path-2">
+            ADD NEW ITEM
+        </div>
+    </div>
+</div>

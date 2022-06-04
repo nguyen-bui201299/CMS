@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-gold: #F9D205;
+
+    --color-enable: #20bf6b;
+    --color-disable: #eb3b5a;
+
+    --card-border-radius-box: 1rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding-box: 1.5rem;
+    --padding-1: 1.2rem;
+    --width-box: 15rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light); 
+}
+
+.container{
+    grid-template-columns: 14rem auto !important;
+    /* display: flex; */
+}
+.content-add-user{
+    width: 80vw;
+}
+.header-user {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.title-header-user {
+    margin: 10px 5px 5px 5px;
+    width: 75%;
+}
+.title-header-user div {
+    color: black;
+    font-size: 15px;
+}
+.title-header-user div p {
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+.controller-header-user {
+
+   
+}
+.box-controller-header-user {
+}
+/* box-edit-user */
+.box-edit-user{
+    width: 82vw;
+    height: 100vh;
+    position: absolute;
+    /* animation-name: example;
+    animation-duration: 2s; */
+    /* float: right; */
+    top: 0;
+}
+
+#box-edit-user{
+ display: none;
+}
+.box-content{
+    width: 30vw;
+    height: 100vh;
+    background-color: var(--color-info-light);
+    padding: 50px 10px 10px 20px;
+    float: right;
+    margin-right: 15px;
+    /* border: 5 solid black; */
+    border-radius: 5px;
+    border-left: 5px solid black;
+}
+.box-header{
+    height: 75px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-header label {
+    font-weight: bold;
+    font-size: 22px;
+}
+.box-edit-content{
+    height: 265px;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    
+}
+.box-username{
+    height: 45%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.box-user-control{
+    display: flex;
+}
+.box-username .box-user-controller{
+    width: 30%;
+}.box-username .box-user-controller label {
+    font-size: 15px;
+    font-weight: bold;
+}
+.box-username .box-user-controller div{
+    position: relative;
+    right: 0px;
+    padding: 0;
+    display: flex;
+    margin-top: 5px;
+}
+.box-username .box-user-controller div select{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-1);
+    color: var(--color-gold);
+}
+.box-username .box-user-controller div span{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: var(--color-gold);
+}
+
+.box-username .box-user-controller div .btn-add-user{
+    margin-left: 10px;
+}
+.box-username .box-user-controller div .btn-add-user input{
+    width: 45px;
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-enable);
+}
+.box-username select option {
+    text-indent: 15px;
+    border-radius: 5px;
+ }
+.list-user-role{
+
+     margin-top: 15px;
+ }
+ .box-username .list-user-role label{
+     padding: 5px 15px;
+     background-color: #fff;
+     margin-right: 15px;
+     border-radius: 5px;
+     position: relative;
+     font-weight: bold;
+     font-size: 15px;
+ }
+ .box-username .list-user-role label span{
+     position: absolute;
+     top: 0;
+     right: 0;
+     color: red;
+     font-size: 15px;
+ }
+.box-selection-role{
+    color: black;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.box-selection-role .role label {
+    font-size: 15px;
+}
+.box-selection-role .role {
+    width: 30%;
+}
+.box-selection-role .role div{
+    position: relative;
+    right: 0px;
+    padding: 0;
+    display: flex;
+}
+.box-selection-role .role div select{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-1);
+    color: var(--color-gold);
+}
+.box-selection-role .role div span {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: var(--color-gold);
+}
+.box-selection-role .role div .btn-add-role{
+    margin-left: 10px;
+}
+.box-selection-role .role div .btn-add-role input {
+    width: 50px;
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-enable);
+}
+#edit-role:hover{
+    transform: translateX(0);
+}
+.box-selection-role .list-user-role{
+    margin-top: 15px;
+}
+.box-selection-role .list-user-role label{
+    padding: 5px 15px;
+    background-color: #fff;
+    margin-right: 15px;
+    border-radius: 5px;
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+}
+.box-selection-role .list-user-role label span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    font-size: 15px;
+}
+
+.box-select-role-controller {
+    margin-top: 5px;
+}
+.box-select-role-controller select {
+    background-color: black;
+    color: #E8E736;
+    padding: 5px;
+    border-radius: 5px;
+}
+.box-bottom{
+    height: 50px;
+    margin-top: 25px;
+}
+.box-bottom input {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.box-bottom .btn-cancel {
+    background-color: black;
+    color: white;
+    border: 1px solid var(--color-info-light);
+}
+.box-bottom .btn-save{
+    background-color: var(--color-warning);
+    color: var(--color-dark);
+    border-radius: var(--border-radius-1);
+    border: 1px solid var(--color-dark);
+}
+
+/* content-user */
+.content-user {
+    border-top: 1px solid #ccc;
+    width: 80vw;
+}
+.controller-content-user button {
+    height: 30px;
+    border-radius: 5px;
+    background-color: black;
+    width: auto;
+    padding: 7px;
+}
+.controller-content-user .addUser {
+    color: rgb(18, 209, 18);
+    font-size: 15px;
+}
+.controller-content-user .deleteuser {
+    color: rgb(214, 52, 52);
+    font-size: 15px;
+}
+.table-user {
+    margin-top: 10px;
+}
+.table-user table{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}
+.table-user table th {
+    border: 1px solid #ccc;
+    background-color: rgb(230, 186, 106);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.table-user table td{
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 2px;
+}
+.table-user table tr{
+    height: 50px;
+    
+}
+.table-user table tr td {
+    width: 10%;
+}
+.table-user table tr td p{
+   word-break: break-all;
+}
+.list-page {
+    margin-top: 10px;
+}
+.list-page ul{
+    display: flex;
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.list-page ul li {
+    margin-left: 5px;
+    background-color: black;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.list-page ul li span{
+    font-size: 12px;
+}
+
+/* box-notif-delte */
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 1400px;
+        margin: 0 auto;
+    }
+}

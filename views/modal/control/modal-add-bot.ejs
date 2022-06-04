@@ -1,0 +1,43 @@
+<div class="box-add-bot" id="box-add-bot" style="display: none;">
+    <div class="box-content">
+        <div class="box-header">
+            <label for="" >New Bot </label>
+            <i class="fa fa-times" aria-hidden="true" id="close-edit-role" onclick="closeBoxedit()"></i>
+        </div>
+        <div class="box-type-controller">
+            <div class="box-type-controller">
+                <label>Loại Bot :</label><br>
+                <div>
+                    <div>
+                        <select>
+                            <option value="hung">FaceBook</option>
+                            <option value="nguyen">Youtube</option>
+                            <option value="son">Twitter</option>
+                        </select>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="number-post-bot">
+            <label for="">Tên Bot :</label><br>
+            <input type="text" placeholder="Enter Bot Name" >
+        </div>
+        <div class="number-post-bot">
+            <label for="">Số lượng bài viết cào :</label><br>
+            <input type="text" placeholder="Nhập số lượng" >
+        </div>
+        <div class="time-post-bot">
+            <label for="">Khoảng thời gian cào :</label><br>
+            <input type="datetime-local"> <span class="material-symbols-outlined">
+                minimize
+                </span> <input type="datetime-local">
+        </div>
+        <div class="box-bottom">
+            <input type="button" value="Cancel" class="btn-cancel-add-bot" onclick="closeBoxAdd()">
+            <input type="button" value="Save" class="btn-save-add-bot" onclick="openBoxSaveAdd()">
+        </div>
+    </div>
+</div>

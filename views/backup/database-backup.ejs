@@ -1,0 +1,31 @@
+<div id="tab_database" class="tabbody detail_database">
+    <div class="tabbody_database">
+        <div class="driver">
+            <label>Database Driver</label>
+            <div class="selected">
+                <select>
+                    <option value="1">Choose option</option>
+                    <option value="mysql">MySQL</option>
+                    <option value="unknown">unknown</option>
+                    <option value="unknown">unknown</option>
+                </select>
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </div>
+        </div>
+        <div class="switch_zip">
+            <label class="switch">
+                <input onclick="onSwitch()"  type="checkbox" id="togBtn">
+                <div class="slider round" id="toggleswitch">
+                    <span class="off">OFF</span>
+                    <span class="on">ON</span>
+                </div>
+            </label>
+            <div class="content_switch">
+                <h3>Enable gzip database backup</h3>
+                <p>The database dump can be gzipped to decrease diskspace usage, Good for large database.</p>
+            </div>
+        </div>
+    </div>
+</div>

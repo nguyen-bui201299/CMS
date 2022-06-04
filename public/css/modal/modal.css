@@ -1,0 +1,199 @@
+/* Modal add user */
+.modal-add-user .modal {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0, 0, 0, 0.4);
+}
+
+.modal-add-user .modal .centered {
+    padding:5px;
+    background: var(--color-background);
+    border-radius:  var(--border-radius-1);
+    display:inline-block;
+    vertical-align:middle;
+    width: 28rem;
+    max-width:400px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -185px;
+}
+
+.modal-add-user .modal .centered .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-add-user .modal .centered form div,
+.modal-add-user .modal .centered form div,
+.modal-add-user .modal .centered form div,
+.modal-add-user .modal .centered form div {
+    padding: 12px;
+}
+
+.modal-add-user .modal .centered form div .username,
+.modal-add-user .modal .centered form div .name,
+.modal-add-user .modal .centered form div .email,
+.modal-add-user .modal .centered form div .password,
+.modal-add-user .modal .centered form div .role {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.3;
+}
+
+.modal-add-user .modal .centered form div .role div {
+    position: relative;
+    right: 0px;
+    padding: 0;
+}
+
+.modal-add-user .modal .centered form div .role select {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--color-info-light);
+    border-radius: var(--border-radius-1);
+}
+
+.modal-add-user .modal .centered form div .role span {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: black;
+}
+
+.submit-cancel .submit-i {
+    background-color: var(--color-success);
+}
+
+.submit-cancel .cancel-i {
+    background-color: var(--color-info-light);
+}
+
+.submit-cancel .submit-i,
+.submit-cancel .cancel-i {
+    width: 6rem;
+    height: 32px;
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+}
+
+.modal-add-user .modal .centered form div .username label,
+.modal-add-user .modal .centered form div .name label,
+.modal-add-user .modal .centered form div .email label,
+.modal-add-user .modal .centered form div .password label,
+.modal-add-user .modal .centered form div .role label {
+    font-size: 15px;
+}
+
+.modal-add-user .modal .centered form div .username input,
+.modal-add-user .modal .centered form div .name input,
+.modal-add-user .modal .centered form div .email input,
+.modal-add-user .modal .centered form div .password input {
+    width: 13rem;
+    padding: 10px;
+    background-color: var(--color-info-light);
+
+    border-radius: var(--border-radius-1);
+}
+
+.modal-save-user .modal .centered::before {
+    content:"";
+    display:inline-block;
+    width:0;
+    height:100%;
+    vertical-align:middle;
+}
+/* Modal save user */
+.modal-save-user .modal {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0, 0, 0, 0.4);
+}
+
+.modal-save-user .modal .centered {
+    padding:5px;
+    background: var(--color-background);
+    border-radius:  var(--border-radius-1);
+    display:inline-block;
+    vertical-align:middle;
+    width: 28rem;
+    max-width:400px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -185px;
+}
+
+.modal-save-user .modal .centered .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-save-user .modal .centered form div,
+.modal-save-user .modal .centered form div,
+.modal-save-user .modal .centered form div,
+.modal-save-user .modal .centered form div {
+    padding: 12px;
+}
+
+.modal-save-user .modal .centered form div .username,
+.modal-save-user .modal .centered form div .name,
+.modal-save-user .modal .centered form div .email,
+.modal-save-user .modal .centered form div .password,
+.modal-save-user .modal .centered form div .role {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.3;
+}
+
+.modal-save-user .modal .centered form div .role div {
+    position: relative;
+    right: 0px;
+    padding: 0;
+}
+
+.modal-save-user .modal .centered form div .role select {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--color-info-light);
+    border-radius: var(--border-radius-1);
+}
+
+.modal-save-user .modal .centered form div .role span {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: black;
+}
+.modal-save-user .modal .centered form div .username label,
+.modal-save-user .modal .centered form div .name label,
+.modal-save-user .modal .centered form div .email label,
+.modal-save-user .modal .centered form div .password label,
+.modal-save-user .modal .centered form div .role label {
+    font-size: 15px;
+}
+
+.modal-save-user .modal .centered form div .username input,
+.modal-save-user .modal .centered form div .name input,
+.modal-save-user .modal .centered form div .email input,
+.modal-save-user .modal .centered form div .password input {
+    width: 13rem;
+    padding: 10px;
+    background-color: var(--color-info-light);
+
+    border-radius: var(--border-radius-1);
+}
+
+.modal-save-user .modal .centered::before {
+    content:"";
+    display:inline-block;
+    width:0;
+    height:100%;
+    vertical-align:middle;
+}

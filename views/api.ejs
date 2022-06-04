@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/dashboard/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="/css/dashboard/insights/insights.css" rel="stylesheet" type="text/css">
+    <link href="/css/api-developer/api.css" rel="stylesheet" type="text/css">
+    <link href="/css/dashboard/insights/chart.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Api Developer</title>
+</head>
+<body>
+    <div class="container">
+        <%- include ('sidebar.ejs') %>
+        <main>
+            <div class="header">
+                <div class="header-top">
+                    <%- include ('top-right/top.ejs') %>
+                </div>
+                <div class="header-content">
+                    <h2>API List</h2>
+                    <a href="#">ADD API</a>
+                </div>
+            </div>
+            <div class="container-search">
+                <div class="search">
+                    <label for=""> A collective list of APIs. Build.</label><br>
+                    <input type="search" value="" placeholder="Search API ...">
+                </div>
+            </div>
+            <div class="content">
+                <div class="select-search">
+                    <div>
+                        <select name="" id="">
+                            <option value="By Last Updates">By Last Updates</option>
+                            <option value="By Upvotes">By Last</option>
+                        </select>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                </div>
+                <div class="list-apis-card">
+                    <div class="api-cards">
+                        <div class="api-cards-content">
+                            <div class="img-api">
+                                <img src="https://img5.thuthuatphanmem.vn/uploads/2021/12/03/hinh-anh-gai-xinh-toc-dai-deo-kinh_053338669.jpg" alt="">
+                            </div>
+                            <div class="content-apis">
+                                <div class="content-apis-title">
+                                    <label for="">Omdb</label>
+                                    <span class="material-symbols-outlined">
+                                        open_in_new
+                                        </span>
+                                </div>
+                                <div class="child-content-client">
+                                  <span>
+                                    The Open Movie Database API. The OMDb API is a RESTful web service to obtain movie information, all content and images on the site ... <label for="">Read More</label>
+                                  </span>
+                                </div>
+                                <div class="content-apis-bottom">
+                                    <label for="">Entertainment</label>
+                                    <label for=""> Movies</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-cards">
+                        <div class="api-cards-content">
+                            <div class="img-api">
+                                <img src="https://img5.thuthuatphanmem.vn/uploads/2021/12/03/hinh-anh-gai-xinh-toc-dai-deo-kinh_053338669.jpg" alt="">
+                            </div>
+                            <div class="content-apis">
+                                <div class="content-apis-title">
+                                    <label for="">Omdb</label>
+                                    <span class="material-symbols-outlined">
+                                        open_in_new
+                                        </span>
+                                </div>
+                                <div class="child-content-client">
+                                  <span>
+                                    The Open Movie Database API. The OMDb API is a RESTful web service to obtain movie information, all content and images on the site ... <label for="">Read More</label>
+                                  </span>
+                                </div>
+                                <div class="content-apis-bottom">
+                                    <label for="">Entertainment</label>
+                                    <label for=""> Movies</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subscribe-email">
+                        <span class="material-symbols-outlined">
+                            waving_hand
+                            </span>
+                            <label for="">
+                                The best APIs to your inbox twice a month
+                            </label>
+                            <input type="text" placeholder="Your email">
+                            <button>SUBCRIBE</button>
+                    </div>
+                    <div class="api-cards">
+                        <div class="api-cards-content">
+                            <div class="img-api">
+                                <img src="https://img5.thuthuatphanmem.vn/uploads/2021/12/03/hinh-anh-gai-xinh-toc-dai-deo-kinh_053338669.jpg" alt="">
+                            </div>
+                            <div class="content-apis">
+                                <div class="content-apis-title">
+                                    <label for="">Omdb</label>
+                                    <span class="material-symbols-outlined">
+                                        open_in_new
+                                        </span>
+                                </div>
+                                <div class="child-content-client">
+                                  <span>
+                                    The Open Movie Database API. The OMDb API is a RESTful web service to obtain movie information, all content and images on the site ... <label for="">Read More</label>
+                                  </span>
+                                </div>
+                                <div class="content-apis-bottom">
+                                    <label for="">Entertainment</label>
+                                    <label for=""> Movies</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="api-cards">
+                        <div class="api-cards-content">
+                            <div class="img-api">
+                                <img src="https://img5.thuthuatphanmem.vn/uploads/2021/12/03/hinh-anh-gai-xinh-toc-dai-deo-kinh_053338669.jpg" alt="">
+                            </div>
+                            <div class="content-apis">
+                                <div class="content-apis-title">
+                                    <label for="">Omdb</label>
+                                    <span class="material-symbols-outlined">
+                                        open_in_new
+                                        </span>
+                                </div>
+                                <div class="child-content-client">
+                                  <span>
+                                    The Open Movie Database API. The OMDb API is a RESTful web service to obtain movie information, all content and images on the site ... <label for="">Read More</label>
+                                  </span>
+                                </div>
+                                <div class="content-apis-bottom">
+                                    <label for="">Entertainment</label>
+                                    <label for=""> Movies</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="list-page">
+                    <button>PREVIOUS PAGE</button>
+                    <div>
+                        <label for="">1</label>
+                    </div>
+                    <button>NEXR PAGE</button>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+</body>

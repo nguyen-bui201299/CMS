@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-gold: #F9D205;
+
+    --color-enable: #20bf6b;
+    --color-disable: #eb3b5a;
+
+    --card-border-radius-box: 1rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding-box: 1.5rem;
+    --padding-1: 1.2rem;
+    --width-box: 15rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light); 
+}
+/* box-edit-bot */
+.box-add-bot{
+    width: 96vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    animation-name: example;
+    animation-duration: 2s;
+    
+}
+@keyframes example {
+    from {transform: translate(700px);}
+    to {transform: translate(0);}
+  }
+#close-edit-role{
+    animation-name: closebox;
+    animation-duration: 3s;
+}
+
+@keyframes closebox{
+    from {transform: translate(0);}
+    to {transform: translate(700px);}
+}
+
+.box-content{
+    width: 30vw;
+    height: 100vh;
+    background-color: #E8E736;
+    padding: 50px 10px 10px 20px;
+    float: right;
+    margin-right: 15px;
+    /* border: 5 solid black; */
+    border-radius: 5px;
+    border-left: 5px solid black;
+}
+
+.box-header{
+    height: 75px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-header label {
+    font-weight: bold;
+    font-size: 22px;
+}
+.number-post-bot{
+    margin-bottom: 15px;
+}
+.number-post-bot label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.number-post-bot input{
+    margin-top: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-info-light);
+    padding: 10px 10px;
+    border-radius: var(--border-radius-1);
+}
+.time-post-bot{
+    margin-bottom: 15px;
+}
+.time-post-bot label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.time-post-bot input{
+    margin-top: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-info-light);
+    padding: 10px 10px;
+    border-radius: var(--border-radius-1);
+}
+.box-type-controller{
+    width: 30%;
+}.box-type-controller label {
+    font-size: 15px;
+    font-weight: bold;
+}
+.box-type-controller div{
+    position: relative;
+    right: 0px;
+    padding: 0;
+    display: flex;
+    margin-top: 5px;
+    width: 88%;
+}
+.box-type-controller div select{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-1);
+    color: var(--color-gold);
+}
+.box-type-controller div span{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    color: var(--color-gold);
+}
+
+.box-type-controller div .btn-add-user{
+    margin-left: 10px;
+}
+.box-type-controller div .btn-add-user input{
+    width: 45px;
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-enable);
+}
+
+.box-bottom{
+    height: 50px;
+    margin-top: 25px;
+}
+.box-bottom input {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.box-bottom .btn-cancel {
+    background-color: black;
+    color: white;
+}
+.box-bottom .btn-save{
+    background-color: rgb(208, 149, 39);
+    color: #ccc;
+}

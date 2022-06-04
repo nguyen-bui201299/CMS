@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.body{
+    
+}
+.row{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* background-color: #18191A; */
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcc636;
+
+}
+.login-content{
+    background-image: url(../../img/login/bg-login.png);
+    background-repeat: no-repeat;
+    /* background-color: aqua;   */
+}
+section .login-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 632px;
+    height: 464px;
+}
+section .login-content .form{
+    width: 50%;
+}
+section .login-content .form h2{
+    color: #dcc636;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    letter-spacing: 1px;
+    justify-content: center;
+}
+section .login-content .form .input-form{
+    position: relative;
+    margin-bottom: 20px;
+}
+section .login-content .form .input-form input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    }
+section .login-content .form .input-form i {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+    color: #000;
+}
+section .login-content .form .input-form input[type="submit"]{
+    background: #dcc636;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+               0 2px 2px rgba(0,0,0,0.12),
+               0 4px 4px rgba(0,0,0,0.12),
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+}
+section .login-content .form .input-form i{
+    color: #fff;
+}
+section .login-content .form .input-form input[type="submit"]:hover{
+    background: #FFDD00;
+}
+section .login-content .form .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-size: 14px;
+    float: right;
+}
+section .login-content .form .remember label{
+    color: #FFDD00;
+}
+section .login-content .form .remember label input{
+    margin-right: 5px;
+}
+section .login-content .form .input-form p{
+    color: #607d8b;
+}
